@@ -1,0 +1,525 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #F9FBE7;
+    font-family: Times;
+    font-size: 18px;
+    
+   
+}
+
+
+.menu__navbar {
+        display: none;
+        height: 30px;
+        width: 30px;
+}
+
+
+.menu__navbar>ul>li>a {
+    color
+}
+
+
+
+.header {
+    display: flex;
+    background: transparent;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    padding: 5px 10%;
+    align-items: center;
+
+}
+
+
+
+.header>img {
+    width: 200px;
+    height: auto;
+}
+
+.header>ul {
+    display: flex;
+    
+}
+
+.header>ul>li {
+    padding: 0 15px;  
+    list-style: none  
+}
+
+.header>ul>li:last-child {
+    padding-right: 0;
+}
+
+
+.header>ul>li>a {
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.mb__navbar>div {
+    position: relative;
+}
+
+.exit__menu {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 100;
+    height: 35px;
+    width: 35px;
+}
+
+#tongquanduan {
+    position: relative;
+}
+
+#tongquanduan>img {
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    opacity: 1;
+
+}
+
+#tongquanduan>div {
+    position: absolute;
+    top: 200px;display: flex; 
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+#tongquanduan>div>div:first-child {
+    padding-right: 10%;
+    font-family: Times;
+}
+
+#tongquanduan>div>div:first-child> h2 {
+    margin-bottom: 15px;
+}
+
+#tongquanduan>div>div:first-child> p {
+    /* font-size: 20px; */
+    line-height: 2;
+}
+
+#tongquanduan>div>div>img {
+    width: 50%;
+    height: auto;
+    outline: 15px solid gray;
+}
+
+
+/* Footer */
+.footer {
+    color: white;
+    background: #EA906C;
+   
+    padding: 20px 10%;
+    padding-bottom: 100px;
+    /* font-size: 18px; */
+    justify-content: space-around;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+    
+}
+
+.footer>div>h2 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+#sumenh, #tamnhin, #target, #thuctrangvalydothanhlap {
+    padding: 50px 10%;
+    min-height: 100vh;
+    scroll-margin-top: 30vh;
+    line-height: 2;
+}
+
+
+
+
+/* homediv */
+
+.homediv>div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.homediv>div:first-child>h3 {
+    font-size: 32;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    /* color: linear-gradient(red, yellow); */
+ background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
+}
+/* SUMENH */
+
+#sumenh>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#sumenh>div>div:first-child {
+    flex: 1;
+}
+
+#sumenh>div>div:nth-child(2) {
+    flex: 2;
+    padding-left: 30px;
+    line-height: 2;
+}
+
+#sumenh>div>div>img {
+   width: 500px;
+   height: auto;
+}
+
+
+/* TARGET */
+#target>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#target>div>div:first-child {
+    position: relative;
+    flex: 2;
+}
+
+#target>div>div:nth-child(2) {
+    flex: 8
+}
+
+#target>div>div:first-child>img {
+    height: 600px;
+    position: relative;
+    left: -400px;
+    bottom: -50px;
+    flex: 6
+}
+
+
+/* CONTACT */
+
+.contact__body {
+    height: 500px;
+    background: white;
+    padding: 200px 10%;
+    padding-bottom: 600px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.contact__body>div:first-child, .contact__body>div>div , .contact__body>div>h4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact__body>div>div {
+    border-right: 1px solid gray;
+}
+
+.contact__body>.contact__body__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__body>.contact__body__ul>li {
+list-style-type: square;}
+
+.contact__body>div>div:last-child {
+    border-right: none;
+}
+
+
+.contact__body>div:first-child>h3>span {
+    color: #EA906C;
+    font-weight: bold;
+}
+
+.contact__pp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.contact__body ul li {
+    list-style-position: inline;
+}
+
+
+
+/* Paralax scroll */
+.showtotop {
+    opacity: 0;
+}
+
+@keyframes mymove {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.active>.showtotop {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+
+.delay-02 {
+    animation-delay: 0.2s!important;
+}
+
+.delay-04 {
+    animation-delay: 0.4s!important;
+    
+}
+
+.delay-06 {
+    animation-delay: 0.6s!important;
+    
+}
+.delay-08 {
+    animation-delay: 0.8s!important;
+    
+}
+
+
+.mb__navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    opacity: 0.8;
+}
+
+
+.mb__navbar>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mb__navbar>div>ul>li {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.mb__navbar>div>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+    
+
+
+/* Thuctrangvalydothanhlap */
+
+#thuctrangvalydothanhlap>div:first-child {
+    position: relative;
+}
+
+
+
+#thuctrangvalydothanhlap>div>img {
+    width: 400px;
+    height: auto;
+    z-index: 1;
+}
+
+#thuctrangvalydothanhlap>div:first-child>img:nth-child(2) {
+    position: absolute;
+    bottom: -600px;
+    left: -140px;
+}
+
+
+#thuctrangvalydothanhlap>div:first-child>img:nth-child(3) {
+    position: absolute;
+    right: -140px;
+    bottom: -600px;
+}
+
+
+
+#thuctrangvalydothanhlap>div>ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    span: 15px;
+    z-index: 100;
+}
+
+
+.div1button {
+    padding: 10px 40px;
+    background: linear-gradient(to bottom, #8A1D1D 0%, #9B705D 100%);
+  /* Mask the color to the text, and remove the rest  */
+  webkit-background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+    -webkit-text-fill-color: white; 
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    
+}
+@media screen and (max-width: 1080px){
+    * {
+        font-size: 16px;
+    }
+
+    .header ul.navbar__desktop {
+        display: none;
+    }
+    
+    .menu__navbar {
+        display: block;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .mb__navbar {
+        display: none;
+    }
+    
+
+    .header>img {
+        width: 150px;
+        height: auto;
+    }
+    
+
+    .header, #sumenh, .footer, #target,  #tongquanduan>div, #tamnhin, .bantochuc {
+        padding-left: 25px;
+        line-height: 2;
+        padding-right: 25px;
+
+    }
+
+    .contact__pp {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact__body>.contact__pp>div {
+        border-right: none;
+        margin-top: 20px;
+    }
+
+ 
+
+    .bantochuc>div {
+        display: grid;
+        grid-template-columns: 1fr!important;
+    }
+}
+
+
+@media screen and (max-width: 756px){
+    body {
+        padding: 0 3px;
+    }
+
+    * {
+        font-size: 14px;
+    }
+
+    .navbar__desktop {
+        display: none;
+    }
+
+    .header>img {
+        width: 120px;
+        height: auto;
+    }
+
+    .header, #sumenh, #item, .footer, #tongquanduan>div, #tamnhin, .bantochuc  {
+        padding-left: 15px;
+        padding-right: 15px;
+        line-height: 1.5;
+    }
+}
+
+
+/* bantochuc */
+
+.bantochuc  {
+    margin-top: 100px;
+    padding: 0 10%;
+}
+
+.bantochuc>div>h3 {
+    margin-top: 50px;
+    font-size: 32;
+        text-transform: uppercase;
+        padding-bottom: 50px;
+    background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.bantochuc>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.bantochuc>div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bantochuc>div>div>img {
+    height: 50%;
+    margin-bottom: 30px;
+}
+
+.bantochuc>div>div>p {
+    text-align: center;
+}
