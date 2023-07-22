@@ -35,7 +35,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 20;
+    z-index: 99999999999;
     padding: 5px 10%;
     align-items: center;
 
@@ -120,7 +120,7 @@ body {
 
 #tongquanduan>div>div:first-child> h2 {
     margin-bottom: 15px;
-     font-size: 32;
+     font-size: 2rem;
     text-transform: uppercase;
     padding-bottom: 50px;
     /* color: linear-gradient(red, yellow); */
@@ -198,7 +198,7 @@ body {
 
 .homediv>div:first-child>h3, 
 .contact__body>div>h3 {
-    font-size: 32;
+    font-size: 2rem;
     text-transform: uppercase;
     /* color: linear-gradient(red, yellow); */
  background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
@@ -217,6 +217,7 @@ body {
     width: 150px;
     border-radius: 5px;
     margin-bottom: 30px;
+    display: inline-block;
 }
 
 
@@ -285,10 +286,10 @@ body {
 }
 
 .contact__body>div:first-child, .contact__body>div>div , .contact__body>div>h4{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 
@@ -301,10 +302,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
-.contact__body>.contact__body__ul>li {
-list-style-type: square;}
+.contact__body__ul>ul>li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+}
+
 
 .contact__body>div>div:last-child {
     border-right: none;
@@ -323,11 +330,6 @@ list-style-type: square;}
 
 
 
-.contact__body ul li {
-    list-style-position: inline;
-}
-
-
 .in4__card {
     display: flex;
     justify-content: center;
@@ -340,7 +342,7 @@ list-style-type: square;}
     margin: 20px;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    object-fit: cover;
+    object-fit: center;
     
 }
 
@@ -401,13 +403,13 @@ list-style-type: square;}
     bottom: 0;
     height: 100vh;
     width: 100vw;
-    background: black;
+    background: #EA906C;
     display: none;
     justify-content: center;
     align-items: center;
     display: none;
     opacity: 1;
-    z-index: 999999;
+    z-index: 99999999999999999999;
 }
 
 
@@ -419,15 +421,20 @@ list-style-type: square;}
     justify-content: center;
 }
 
+.mb__navbar>div>ul {
+    width: 80%;
+}
 
 .mb__navbar>div>ul>li {
     padding: 10px;
     border-bottom: 1px solid white;
+    list-style: none;
 }
 
 .mb__navbar>div>ul>li>a {
     text-decoration: none;
     color: white;
+
 }
     
 
@@ -523,14 +530,52 @@ background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
 }
 
 
-@media screen and (max-width: 1080px){
+.bantochuc__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.bantochuc__cards>div {
+    position: relative;
+}
+.bantochuc__cards>div>img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    z-index: 100;
+}
+
+.bantochuc__cards>div>div{
+    position: absolute;
+    left: 0;
+    top: 245px;
+    background: #EA906C;
+    z-index: 1000;
+    color: white;
+    font-weight: bold
+}
+
+@media screen and (min-width: 900px) and (max-width: 1080px) {
+     .header, #sumenh, .footer, #target,  #tongquanduan>div, #tamnhin, .bantochuc {
+        padding-left: 15px;
+        line-height: 2;
+        padding-right: 15px;
+    }
+
+    
+}
+
+@media screen and (max-width: 900px){
     * {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .contact__body  {
         padding-bottom: 1400px;
     }
+
+
     .header ul.navbar__desktop {
         display: none;
     }
@@ -555,10 +600,8 @@ background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
     }
     
 
-    .header, #sumenh, .footer, #target,  #tongquanduan>div, #tamnhin, .bantochuc {
-        padding-left: 25px;
-        line-height: 2;
-        padding-right: 25px;
+    #sumenh , #target,  #tongquanduan, #tamnhin {
+        display: none;
 
     }
 
@@ -572,8 +615,12 @@ background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
         margin-top: 20px;
     }
 
- 
 
+#thuctrangvalydothanhlap>div>ul.ulthuctrang {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
     .bantochuc>div {
         display: grid;
         grid-template-columns: 1fr!important;
@@ -587,7 +634,7 @@ background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
     }
 
     * {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .navbar__desktop {
@@ -603,6 +650,7 @@ background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
         padding-left: 15px;
         padding-right: 15px;
         line-height: 1.5;
+        
     }
 
     .contact__body  {
@@ -620,7 +668,7 @@ background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
 
 .bantochuc>div>h3 {
     margin-top: 50px;
-    font-size: 32;
+    font-size: 2rem;
         text-transform: uppercase;
         padding-bottom: 50px;
     background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
