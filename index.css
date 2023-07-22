@@ -7,7 +7,7 @@
 
 body {
     background-color: #F9FBE7;
-    font-family: Times;
+    font-family: Monaco;
     font-size: 18px;
     
    
@@ -50,12 +50,24 @@ body {
 
 .header>ul {
     display: flex;
-    
+    transition: all 0.5s;
 }
 
 .header>ul>li {
     padding: 0 15px;  
-    list-style: none  
+    list-style: none ; 
+    transition: all 0.55s;
+}
+
+
+.header:hover {
+   
+    background: #EA906C;
+    
+}
+.header>ul>li:hover>a {
+    color: white;
+    
 }
 
 .header>ul>li:last-child {
@@ -90,8 +102,8 @@ body {
     min-height: 100vh;
     width: 100vw;
     max-width: 100%;
-    opacity: 1;
-
+    opacity: 0.5;
+    margin-top: -30px;
 }
 
 #tongquanduan>div {
@@ -108,6 +120,15 @@ body {
 
 #tongquanduan>div>div:first-child> h2 {
     margin-bottom: 15px;
+     font-size: 32;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    /* color: linear-gradient(red, yellow); */
+ background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
+  /* Mask the color to the text, and remove the rest  */
+  -webkit-background-clip: text;
+  /* Make the text fill color value transparent so the masked background color comes through */
+  -webkit-text-fill-color: transparent;
 }
 
 #tongquanduan>div>div:first-child> p {
@@ -116,11 +137,23 @@ body {
 }
 
 #tongquanduan>div>div>img {
-    width: 50%;
+    width: 100%;
     height: auto;
-    outline: 15px solid gray;
+    outline: 20px solid #8A1D1D;
+
 }
 
+
+
+#thuctrangvalydothanhlap>div>ul.ulthuctrang {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+#thuctrangvalydothanhlap>div>ul.ulthuctrang>li {
+    list-style: none; 
+}
 
 /* Footer */
 .footer {
@@ -155,24 +188,38 @@ body {
 
 /* homediv */
 
-.homediv>div:first-child {
+.homediv>div:first-child, .contact__body>div:first-child {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
 }
 
 
-.homediv>div:first-child>h3 {
+.homediv>div:first-child>h3, 
+.contact__body>div>h3 {
     font-size: 32;
     text-transform: uppercase;
-    padding-bottom: 50px;
     /* color: linear-gradient(red, yellow); */
  background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
   /* Mask the color to the text, and remove the rest  */
   -webkit-background-clip: text;
   /* Make the text fill color value transparent so the masked background color comes through */
   -webkit-text-fill-color: transparent;
+
 }
+
+
+.homediv>div:first-child>span, 
+.contact__body>div>span{
+    height: 5px;
+    background: #EA906C;
+    width: 150px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
 /* SUMENH */
 
 #sumenh>div:nth-child(2) {
@@ -228,10 +275,13 @@ body {
     height: 500px;
     background: white;
     padding: 200px 10%;
-    padding-bottom: 600px;
+    padding-bottom: 800px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
+    position: relative;
+    display: block;
+    background: #F9FBE7;
 }
 
 .contact__body>div:first-child, .contact__body>div>div , .contact__body>div>h4{
@@ -278,6 +328,35 @@ list-style-type: square;}
 }
 
 
+.in4__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+   background: #EA906C;
+/* background: linear-gradient(122deg, rgba(81,100,208,1) 0%, rgba(29,145,170,1) 78%); */
+    padding: 20px; 
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    object-fit: cover;
+    
+}
+
+
+.in4__card>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    
+
+}
+
+.in4__card>p.name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
 /* Paralax scroll */
 .showtotop {
@@ -327,7 +406,7 @@ list-style-type: square;}
     justify-content: center;
     align-items: center;
     display: none;
-    opacity: 0.8;
+    opacity: 1;
     z-index: 999999;
 }
 
@@ -390,12 +469,12 @@ list-style-type: square;}
 }
 
 
-.div1button {
+/* .div1button {
     padding: 10px 40px;
     background: linear-gradient(to bottom, #8A1D1D 0%, #9B705D 100%);
-  /* Mask the color to the text, and remove the rest  */
+  Mask the color to the text, and remove the rest 
   webkit-background-clip: text;
-  /* Make the text fill color value transparent so the masked background color comes through */
+  Make the text fill color value transparent so the masked background color comes through 
     -webkit-text-fill-color: white; 
     font-size: 18px;
     font-weight: bold;
@@ -403,12 +482,55 @@ list-style-type: square;}
     border: none;
     outline: none;
     
+    */
+
+
+
+/* CSS */
+.button-92 {
+  --c: #fff;
+  /* text color */
+background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);    
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
 }
+
+.button-92:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.button-92:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.button-92 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+
+
 @media screen and (max-width: 1080px){
     * {
         font-size: 16px;
     }
 
+    .contact__body  {
+        padding-bottom: 1400px;
+    }
     .header ul.navbar__desktop {
         display: none;
     }
@@ -482,6 +604,10 @@ list-style-type: square;}
         padding-right: 15px;
         line-height: 1.5;
     }
+
+    .contact__body  {
+        padding-bottom: 1300px;
+    }
 }
 
 
@@ -524,3 +650,4 @@ list-style-type: square;}
 .bantochuc>div>div>p {
     text-align: center;
 }
+
