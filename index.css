@@ -219,7 +219,7 @@ body {
 #sumenh, #tamnhin, #target, #thuctrangvalydothanhlap {
     padding: 50px 10%;
     min-height: 80vh;
-    scroll-margin-top: 30vh;
+    scroll-margin-top: 13vh;
     line-height: 2;
 }
 
@@ -515,10 +515,13 @@ body {
 
 
 /* Thuctrangvalydothanhlap */
+#target {
+    background: #EDE4FF
+}
 
 #thuctrangvalydothanhlap {
-    background: white;
-    margin-bottom: 200px;
+    background: #ACFADF;
+    padding-bottom: 200px;
 }
 
 #thuctrangvalydothanhlap>div:first-child {
