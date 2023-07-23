@@ -31,12 +31,4 @@ document.body.onload = function () {
 
         }
     };
-
-
-    window.addEventListener("scroll", runOnScroll);
-
-    var exitmenu = document.querySelectorAll(".exit__menu")[0];
-
-
-
 }
