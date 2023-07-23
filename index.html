@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WAI - World and Integration</title>
     <link rel="icon" type="image/x-icon" href="./assets/avt.png">...
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="index.css">
+
+
+
+
 </head>
 
 <body>
@@ -16,19 +20,19 @@
         <ul class="navbar__desktop">
             <li>
                 <a href="index.html">
-                Tổng quan
+                    Tổng quan
                 </a>
             </li>
             <li>
                 <a href="index.html#sumenh">Sứ mệnh và tầm nhìn</a>
             </li>
-            
+            <li>
+                <a href="#thuctrangvalydothanhlap">Thực trạng và lý do thành lập</a>
+            </li>
             <li>
                 <a href="index.html#target">Đối tượng hướng đến</a>
             </li>
-            <li>
-                <a href="">Thực trạng và lý do thành lập</a>
-            </li>
+
             <li>
                 <a href="./ourteam.html">Thành viên</a>
             </li>
@@ -53,7 +57,7 @@
                         <a href="index.html#tamnhin">Tầm nhìn</a>
                     </li>
                     <li>
-                        <a href="">Thực trạng và lý do thành lập</a>
+                        <a href="#thuctrangvalydothanhlap">Thực trạng và lý do thành lập</a>
                     </li>
                     <li>
                         <a href="index.html#target">Đối tượng hướng đến</a>
@@ -68,14 +72,15 @@
             </div>
         </div>
     </div>
+
     <div class="homepage__body">
         <div id="tongquanduan" class="item">
             <img src="./assets/Background.jpg" alt="">
-            <div >
+            <div>
                 <div>
                     <h2>WAI - WORLD AND INTEGRATION</h2>
                     <p>
-                       Được thành lập vào ngày 06/06/2023, WAI - World And Integration tập trung vào chủ đề “Ngôn ngữ
+                        Được thành lập vào ngày 06/06/2023, WAI - World And Integration tập trung vào chủ đề “Ngôn ngữ
                         học”, hướng đến văn
                         hoá,
                         lịch sử, ngôn ngữ của các quốc gia. WAI - World And Integration gắn trong mình Mục tiêu Phát
@@ -88,123 +93,127 @@
                         đồng nghĩa hoà tan”
                     </p>
                     <br>
-                    
+
                     <button class="button-92">
                         Tìm hiểu ngay
                     </button>
                 </div>
-                <div>
-                    <img src="./assets/avt.png" alt="">
-                </div>
+
+                <img src="./assets/avt.png" alt="" class="imageLogo">
+
             </div>
         </div>
 
     </div>
     <div id="sumenh" class="homediv">
-      <div>
-        <h3>SỨ MỆNH VÀ TẦM NHÌN</h3>
-        <span></span>
-      </div>
-      <div>
         <div>
-            <img src="./assets/tamnhinsumenh.png" alt="">
+            <h3>SỨ MỆNH VÀ TẦM NHÌN</h3>
+            <span></span>
         </div>
         <div>
-            <div class="tamnhinsumenh__div">
-                <h3>
-                    Sứ mệnh
-                </h3>
-                
-                <p>
-                    Trong mùa 1, Dự án WAI hướng đến Châu Á - Nơi có nguồn lịch sử lâu đời trên thế giới với đa dạng văn
-                    hoá, tôn giáo.
-                    WAI
-                    sẽ khám phá hết giá trị tinh hoa nơi đây, giúp 
-                    những bạn đang có
-                    ý
-                    định tìm hiểu về nơi này có thêm được những hiểu biết cho riêng bản thân mình.
-                </p>
+            <div>
+                <img src="./assets/tamnhinsumenh.png" alt="">
             </div>
-            <div class="tamnhinsumenh__div">
-                <h3>
-                    Tầm nhìn
-                </h3>
-               
-<p>
+            <div>
+                <div class="tamnhinsumenh__div">
+                    <h3>
+                        Sứ mệnh
+                    </h3>
+
+                    <p>
+                        Trong mùa 1, Dự án WAI hướng đến Châu Á - Nơi có nguồn lịch sử lâu đời trên thế giới với đa dạng
+                        văn
+                        hoá, tôn giáo.
+                        WAI
+                        sẽ khám phá hết giá trị tinh hoa nơi đây, giúp
+                        những bạn đang có
+                        ý
+                        định tìm hiểu về nơi này có thêm được những hiểu biết cho riêng bản thân mình.
+                    </p>
+                </div>
+                <div class="tamnhinsumenh__div">
+                    <h3>
+                        Tầm nhìn
+                    </h3>
+
+                    <p>
                         Xây dựng một cộng đồng cùng nhau học hỏi và phát triển giá trị tinh hoa đất nước bạn và ta
 
-</p>                
+                    </p>
+                </div>
             </div>
         </div>
-      </div>
     </div>
+    <button class="totopbutton">
+        <a href="#tongquanduan"><ion-icon name="arrow-up-outline"></ion-icon></a>
+    </button>
     <div id="thuctrangvalydothanhlap" class="homediv">
-            <div>
-                <h3>
-                    THỰC TRẠNG VÀ LÝ DO THÀNH LẬP
-                </h3>
-                <span></span>
-                <br>
-                <!-- <img src="./assets/element.png" alt="">
-                <img src="./assets/element.png" alt=""> -->
+        <div>
+            <h3>
+                THỰC TRẠNG VÀ LÝ DO THÀNH LẬP
+            </h3>
+            <span></span>
+            <br>
+            <img src="./assets/element.png" alt="">
+                <img src="./assets/element.png" alt="">
 
-            </div>
-            <div >
-                <ul class="ulthuctrang">
-                    <li>Xuất phát từ nhu cầu tìm hiểu về ngôn ngữ, văn hoá, lịch sử của các quốc gia trên thế giới.</li>
-                    <li>
-                        Xóa đi những hiểu lầm, thiếu hiểu biết và bồi dưỡng những kiến thức của cả các bạn đọc giả cũng như thành viên của dự án
-                        có mong muốn và sẽ tham gia rèn luyện, tu dưỡng các lĩnh vực này trong khoảng thời gian gần nhất. 
-                    </li>
-                    <li>
-                        Mong muốn tác động sâu sắc và chia sẻ được những thông tin được chắt lọc một cách chính xác nhất nhằm hội nhập đa quốc
-                        gia. Dự án cộng đồng WAI - World And Integration dành cho các đối tượng có mong muốn tìm hiểu sâu hơn về các loại hình
-                        được kể trên.
-                    </li>
-                    <li>Dựa trên tinh thần tích cực, mang năng lực và sự đầu tư về thời gian của mình vào các dự án cộng đồng, dự án WAI - World
-                    And Integration ra đời để truyền tải những kiến thức liên quan đến lĩnh vực Ngôn Ngữ Học, Lịch Sử, Văn Hoá của các nước
+        </div>
+        <div>
+            <ul class="ulthuctrang">
+                <li>Xuất phát từ nhu cầu tìm hiểu về ngôn ngữ, văn hoá, lịch sử của các quốc gia trên thế giới.</li>
+                <li>
+                    Xóa đi những hiểu lầm, thiếu hiểu biết và bồi dưỡng những kiến thức của cả các bạn đọc giả cũng như
+                    thành viên của dự án
+                    có mong muốn và sẽ tham gia rèn luyện, tu dưỡng các lĩnh vực này trong khoảng thời gian gần nhất. 
+                </li>
+                <li>
+                    Mong muốn tác động sâu sắc và chia sẻ được những thông tin được chắt lọc một cách chính xác nhất
+                    nhằm hội nhập đa quốc
+                    gia. Dự án cộng đồng WAI - World And Integration dành cho các đối tượng có mong muốn tìm hiểu sâu
+                    hơn về các loại hình
+                    được kể trên.
+                </li>
+                <li>Dựa trên tinh thần tích cực, mang năng lực và sự đầu tư về thời gian của mình vào các dự án cộng
+                    đồng, dự án WAI - World
+                    And Integration ra đời để truyền tải những kiến thức liên quan đến lĩnh vực Ngôn Ngữ Học, Lịch Sử,
+                    Văn Hoá của các nước
                     một cách chuyên nghiệp, có chuyên môn nhất đến với cộng đồng. </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="target" class="homediv">
+        <div>
+            <h3>DỰ ÁN HƯỚNG ĐẾN</h3>
+            <span></span>
+        </div>
+        <div>
+            <div>
+                <img src="./assets/sun.png" alt="">
+            </div>
+            <div>
+
+                <ul>
+                    <li>
+                        Nâng cao
+                        nhận thức của cộng đồng về lịch sử, văn hoá, ngôn
+                        ngữ của các quốc gia.
+
+
+
+                    </li>
+                    <li>
+                        Đem đến những dự án ý nghĩa xoay quanh chủ đề văn hoá, lịch sử, ngôn ngữ các nước.
+                        Những bạn mong muốn theo ngành Ngôn Ngữ Học sẽ đánh giá sự phù hợp giữa ngành học với bản thân
+                    </li>
+                    <li>
+                        "Hội nhập không hoà tan” - tiếp thu những
+                        giá trị văn minh của các nước
+                        nhưng không mất đi những giá trị truyền thống, niềm tự hào của dân tộc ta.
+                    </li>
                 </ul>
             </div>
         </div>
-
-    <div id="target" class="homediv">
-       <div>
-        <h3>DỰ ÁN HƯỚNG ĐẾN</h3>
-        <span></span>
-       </div>
-        <div>
-        <div>
-            <img src="./assets/sun.png" alt="">
-        </div>
-        <div>
-            
-            <ul>
-                <li>
-                    Với khát khao đem lại những hiểu biết sâu sắc cho mọi người, dự án WAI - World And
-                    Integration được ra đời để nâng cao
-                    nhận thức của cộng đồng nói chung và học sinh, sinh viên nói riêng về lịch sử, văn hoá ngôn
-                    ngữ của các quốc gia.
-                    
-                   
-        
-                </li>
-                <li>
-                    Đem đến những dự án ý nghĩa xoay quanh chủ đề văn hoá, lịch sử, ngôn ngữ các nước.
-                    Những bạn mong muốn theo ngành Ngôn Ngữ Học sẽ có những kiến thức đủ vững vàng để bước vào
-                    môi trường Đại học. Thông qua
-                    những bài viết mà dự án WAI - World And Integration truyền tải, bạn sẽ phần nào tiếp thu và
-                    xem thử độ phù hợp của bạn
-                    đối với ngành học này.
-                </li>
-                <li>
-                    Mục đích “hội nhập nhưng không hoà tan” vẫn được đặt lên hàng đầu. Chúng ta tiếp thu những
-                    giá trị văn minh của các nước
-                    khác nhưng không làm hoà tan đi những giá trị truyền thống tự hào của dân tộc ta.
-                </li>
-            </ul>
-        </div>
-       </div>
     </div>
 
 
@@ -214,7 +223,7 @@
             <h2>Contact us</h2>
             <p>
                 <span>Website:</span> <a href="https://worldandintegration.com">https://worldandintegration.com</a>
-               <br> <span>Email: </span> worldandintegration.wai@gmail.com
+                <br> <span>Email: </span> worldandintegration.wai@gmail.com
             </p>
         </div>
         <div>
@@ -231,7 +240,8 @@
                     Gmail: anhngoctran118@gmail.com
                 </li>
                 <li>
-                    Link Facebook: <a href="https://www.facebook.com/anhngoctran.118">https://www.facebook.com/anhngoctran.118</a>
+                    Link Facebook: <a
+                        href="https://www.facebook.com/anhngoctran.118">https://www.facebook.com/anhngoctran.118</a>
                 </li>
             </ul>
         </div>
@@ -240,8 +250,10 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="index.js"></script>
-    
+
 </body>
 
 </html>
