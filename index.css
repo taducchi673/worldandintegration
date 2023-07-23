@@ -759,7 +759,9 @@ background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
         height: auto;
     }
     
-
+.header:has(ul:hover) {
+    background: #EA906C;
+}
     
 
     .contact__pp {
