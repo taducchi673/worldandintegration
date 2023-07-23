@@ -314,11 +314,10 @@ body {
 }
 
 #target>div>div:first-child>img {
-    height: 600px;
+    height: 400px;
     position: absolute;
-    left: -100px;
+    left: -50px;
     bottom: -400px;
-  
     opacity: 0.3;
 }
 
@@ -516,11 +515,11 @@ body {
 
 /* Thuctrangvalydothanhlap */
 #target {
-    background: #EDE4FF
+    background: #FAF0D7
 }
 
 #thuctrangvalydothanhlap {
-    background: #ACFADF;
+    background: #E2F6CA;
     padding-bottom: 200px;
 }
 
@@ -801,6 +800,8 @@ background: linear-gradient(to bottom, #8A1D1D 0%, #8A1D1D 100%);
     #target>div:nth-child(2)>div>img {
         opacity: 0.4;
         overflow: hidden;
+        width: 400px;
+        height: 400px;
     }
 
     #target>div:nth-child(2)>div:nth-child(2) {
