@@ -29,7 +29,7 @@ body {
 
 .header {
     display: flex;
-    background: transparent;
+    background-image: linear-gradient(180deg, #F9E07F, #F9AD6A);
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -38,6 +38,7 @@ body {
     z-index: 99999999999;
     padding: 5px 10%;
     align-items: center;
+    
 
 }
 
@@ -99,9 +100,9 @@ body {
     background: #EA906C;
     
 }
-.header>ul>li:hover>a {
-    color: white;
-    
+.header>ul>li>a {
+    color: black;
+ 
 }
 
 .header>ul>li:last-child {
@@ -110,7 +111,6 @@ body {
 
 
 .header>ul>li>a {
-    color: black;
     opacity: 0.8;
     text-decoration: none;
 }
@@ -233,15 +233,17 @@ body {
 /* Footer */
 .footer {
     color: white;
-    background: #EA906C;
+ 
     padding: 20px 10%;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     /* font-size: 18px; */
     justify-content: space-around;
-    padding-top: 100px;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     z-index: 99999999999999999999999;
+        background-image: linear-gradient(360deg, #F9E07F, #F9AD6A);
+
 }
 
 .footer>div>h2 {
@@ -552,10 +554,15 @@ body {
     background: #FAF0D7
 }
 
-
-.header:has(ul:hover){
-    background: #EA906C
+.header:hover {
+      background-image: linear-gradient(180deg, #F9E07F, #F9AD6A);
 }
+}
+.header:has(ul:hover){
+     background-image: linear-gradient( to top, #F9E07F 100%, #F9AD6A 50%);
+}
+
+
 #thuctrangvalydothanhlap {
     background: #E2F6CA;
     padding-bottom: 200px;
