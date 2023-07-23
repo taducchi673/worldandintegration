@@ -518,6 +518,10 @@ body {
     background: #FAF0D7
 }
 
+
+.header:has(ul:hover){
+    background: #EA906C
+}
 #thuctrangvalydothanhlap {
     background: #E2F6CA;
     padding-bottom: 200px;
