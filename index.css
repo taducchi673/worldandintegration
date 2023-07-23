@@ -41,6 +41,40 @@ body {
 
 }
 
+.lihover>ul {
+    display: none;
+}
+
+
+.lihover {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+
+}
+
+.lihover:hover>ul {
+    display: block;
+    background: white;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.lihover:hover>ul>li {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    list-style: none;
+}
+
+.lihover:hover>ul>li>a {
+    text-decoration: none;
+    color: black;
+}
 
 
 .header>img {
