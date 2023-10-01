@@ -51,12 +51,35 @@ $(document).ready(function () {
         ]
     });
 
-    var header = document.getElementsByClassName("header")[0];
-    header.style["background-color"] = "#EA906C";
-    var exitmenu = document.querySelectorAll(".exit__menu")[0];
+    // var header = document.getElementsByClassName("header")[0];
+    // header.style["background-color"] = "#EA906C";
+    // var exitmenu = document.querySelectorAll(".exit__menu")[0];
 
 
     
-    $(".header").style["background-color"] = "#EA906C";
+    // $(".header").style["background-color"] = "#EA906C";
+    
+
+
+    const button = document.querySelectorAll(".boxdieuhuong")[0];
+    console.log(button);
+
+    function runOnScroll() {
+        var height = document.body.scrollTop;
+        var header = document.getElementsByClassName("header")[0];
+        if (height >= 150) {
+            button.style.display = "block";
+        }
+        else if (height < 150) {
+            button.style.display = "none";
+
+        }
+    };
+    document.addEventListener("scroll", (event) => {
+
+        runOnScroll();
+    })
+
+    
     
 });
