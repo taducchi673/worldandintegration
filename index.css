@@ -1174,3 +1174,6 @@ height: 250px;
 }
 
 
+.contact__body__ul>ul>li>span:nth-child(2) {
+    width: 100px;
+}
