@@ -370,8 +370,11 @@ height: 250px;
 .sumenh__content > div:first-child >img.sumenhflyer {
     position: absolute;
     left: -100px;
-    top: -100px;
+    top: -30px;
     z-index: 100;
+    height: 130px;
+    width: 150px;
+    transform: rotate(-15deg);
 }
 
 .sumenh__content > div:first-child >img.sumenhmb {
