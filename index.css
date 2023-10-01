@@ -8,6 +8,9 @@
 body {
     background-color: #F9FBE7;
     font-family: Monaco;
+    padding: 0;
+    border: 0;
+    margin: 0;
 }
 
 
@@ -753,7 +756,7 @@ height: 250px;
 
 .bantochuc  {
     margin-top: 100px;
-    padding: 0 10%;
+    padding: 0 12%;
 }
 
 .bantochuc>div>h3 {
@@ -944,6 +947,15 @@ height: 250px;
 
 @media screen and (max-width: 900px){
 
+
+     * {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+    }
+
+    
      .header, #sumenh, .footer, #target,  #tongquanduan>div, #tamnhin, .bantochuc, #thuctrangvalydothanhlap, .duanhuongden2 {
         padding-left: 15px;
         line-height: 2;
@@ -951,9 +963,7 @@ height: 250px;
     }
 
 
-    * {
-        font-size: 14px;
-    }
+   
      #thuctrangvalydothanhlap {
         padding-bottom: 200px;
     }
