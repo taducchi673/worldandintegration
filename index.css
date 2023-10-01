@@ -933,7 +933,7 @@ height: 250px;
 
 
 @media screen and (min-width: 900px) and (max-width: 1080px) {
-     .header, #sumenh, .footer, #target,  #tongquanduan>div, #tamnhin, .bantochuc, #thuctrangvalydothanhlap, .duanhuongden2 {
+     .header, #sumenh, .footer, #target,  #tongquanduan>div, #tamnhin, .bantochuc, #thuctrangvalydothanhlap, .duanhuongden2, .contact__body {
         padding-left: 15px;
         line-height: 2;
         padding-right: 15px;
@@ -954,6 +954,10 @@ height: 250px;
     .flyer, .sumenhmb, .sumenhflyer, .pinkmoon, .quadat1, .quadat2, .quadat3{
         display: none;
     }
+
+    .contact__body {
+        margin-bottom: 200px;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -967,10 +971,14 @@ height: 250px;
     }
 
 
-     .header, #sumenh, .footer, #target,  #tongquanduan>div, #tamnhin, .bantochuc, #thuctrangvalydothanhlap, .duanhuongden2 {
+     .header, #sumenh, .footer, #target,  #tongquanduan>div, #tamnhin, .bantochuc, #thuctrangvalydothanhlap, .duanhuongden2, .contact__body {
         padding-left: 15px;
         line-height: 2;
         padding-right: 15px;
+    }
+
+    .contact__body {
+        margin-bottom: 250px;
     }
 
 
