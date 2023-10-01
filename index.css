@@ -42,17 +42,23 @@ body {
 
 }
 
+.header>ul>li {
+    height: 30px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
 .lihover>ul {
     display: none;
 }
 
 
+
+
 .lihover {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
+    position: relative;  
+   
 
 }
 
@@ -955,7 +961,7 @@ height: 250px;
         outline: 0;
     }
 
-    
+
      .header, #sumenh, .footer, #target,  #tongquanduan>div, #tamnhin, .bantochuc, #thuctrangvalydothanhlap, .duanhuongden2 {
         padding-left: 15px;
         line-height: 2;
