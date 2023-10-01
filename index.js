@@ -1,13 +1,13 @@
-$(document).ready(function () {
-    $(".exit__menu").click(function () {
+$(document).ready(function() {
+    $(".exit__menu").click(function() {
         $(".mb__navbar").toggle();
     });
 
-    $(".menu__navbar").click(function () {
+    $(".menu__navbar").click(function() {
         $(".mb__navbar").toggle();
     })
 
-    $(".mb__navbar>div>ul>li").click(function () {
+    $(".mb__navbar>div>ul>li").click(function() {
         $(".mb__navbar").hide();
     })
 
@@ -20,9 +20,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         prevArrow: '<button type="button" class="slick-prev"><ion-icon name="chevron-back-outline"></ion-icon></button>',
         nextArrow: '<button type="button" class="slick-next"><ion-icon name="chevron-forward-outline"></ion-icon></button>',
-        
-        responsive: [
-            {
+
+        responsive: [{
                 breakpoint: 1280,
                 settings: {
                     slidesToShow: 2,
@@ -56,22 +55,26 @@ $(document).ready(function () {
     // var exitmenu = document.querySelectorAll(".exit__menu")[0];
 
 
-    
+
     // $(".header").style["background-color"] = "#EA906C";
-    
+
 
 
     const button = document.querySelectorAll(".boxdieuhuong")[0];
+    const header = document.querySelectorAll(".header")[0];
     console.log(button);
+
 
     function runOnScroll() {
         var height = document.body.scrollTop;
         var header = document.getElementsByClassName("header")[0];
         if (height >= 150) {
             button.style.display = "block";
-        }
-        else if (height < 150) {
+            header.style.display = "none";
+        } else if (height < 150) {
             button.style.display = "none";
+
+            header.style.display = "flex";
 
         }
     };
@@ -80,6 +83,6 @@ $(document).ready(function () {
         runOnScroll();
     })
 
-    
-    
+
+
 });

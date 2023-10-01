@@ -266,7 +266,7 @@ body {
     justify-content: space-around;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    z-index: 99999999999999999999999;
+    z-index: 9999;
     background: #BA704F;
 
 }
@@ -950,7 +950,7 @@ height: 250px;
         padding-right: 15px;
     }
 
-    
+
     * {
         font-size: 14px;
     }
