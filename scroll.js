@@ -1,6 +1,4 @@
-
-
-document.body.onload = function () {
+document.body.onload = function() {
 
     const items = document.querySelectorAll(".item");
 
@@ -11,24 +9,29 @@ document.body.onload = function () {
                 item.classList.add("active");
 
             }
-        })
-            ;
+        });
 
     })
 
-    const button = document.querySelectorAll(".totopbutton")[0];
+    const button = document.querySelectorAll(".boxdieuhuong")[0];
+    const header = document.querySelectorAll(".header")[0];
+
 
     function runOnScroll() {
         var height = document.body.scrollTop;
         var header = document.getElementsByClassName("header")[0];
         if (height >= 150) {
-            header.style["background-color"] = "#EA906C";
             button.style.display = "block";
-        }
-        else if (height < 150) {
-            header.style["background-color"] = "transparent";
+            header.style.display = "none";
+        } else if (height < 150) {
             button.style.display = "none";
+
+            header.style.display = "flex";
 
         }
     };
+    document.addEventListener("scroll", (event) => {
+        runOnScroll();
+    })
+
 }
