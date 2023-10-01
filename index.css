@@ -85,7 +85,7 @@ body {
 }
 
 
-.header>img {
+.header>a>img {
     width: 200px;
     height: auto;
 }
@@ -619,7 +619,7 @@ height: 250px;
 
 #thuctrangvalydothanhlap {
     background: transparent;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
 }
 
 #thuctrangvalydothanhlap>div:first-child {
@@ -743,6 +743,8 @@ height: 250px;
         line-height: 1.5;
         
     }
+
+    
 
     .contact__body  {
         padding-bottom: 1400px;
@@ -1072,7 +1074,7 @@ height: 250px;
     }
     
 
-    .header>img {
+    .header>a>img {
         width: 150px;
         height: auto;
     }
@@ -1119,7 +1121,9 @@ height: 250px;
         margin-left: 0;
     }
 
-
+.bantochuc {
+        padding-top: 100px;
+    }
 }
 
 
@@ -1144,7 +1148,7 @@ height: 250px;
         display: none;
     }
 
-    .header>img {
+    .header>a>img {
         width: 120px;
         height: auto;
     }
